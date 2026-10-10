@@ -62,39 +62,29 @@ export interface SiteConfig {
 }
 
 export const site: SiteConfig = {
-  name: 'Anvil Quest Wiki',
-  shortName: 'AQ Wiki',
-  description:
-    'Complete Anvil Quest wiki with boss guides, tier lists, codes, item locations, and beginner tips. Every guide carries a last-verified date.',
-  domain: 'anvil.wiki',
-  tagline: 'Your forge for everything Anvil Quest',
-  legalNotice:
-    'Anvil Quest Wiki is a fan-made community site. Not affiliated with or endorsed by the game developer.',
-  // 👉 APPLY TEMPLATE: set a real address if you run no social channels —
-  // the contact page renders it as a mailto link.
+  name: 'Neon Abyss 2 Wiki',
+  shortName: 'NA2 Wiki',
+  description: 'Explore the Neon Abyss 2 Wiki for beginner guides, agent abilities, Hatchmon evolutions, boss strategies, and gameplay tips.',
+  domain: 'neonabyss2wiki.online',
+  tagline: 'Your guide to Neon Abyss 2 — beginner guides, agents, Hatchmon, and bosses.',
+  legalNotice: 'Neon Abyss 2 Wiki is an independent, fan-made website and is not affiliated with or endorsed by the game\'s developers or publishers. All game-related trademarks and assets belong to their respective owners.',
+  // Set a real address if you run no social channels — the contact page
+  // renders it as a mailto link.
   contactEmail: '',
   social: {
-    official: 'https://example.com/anvil-quest',
-    discord: 'https://discord.gg/example',
-    youtube: 'https://youtube.com/@example',
-    twitter: 'https://twitter.com/example',
-    reddit: 'https://reddit.com/r/anvilquest',
+    official: 'https://www.veewo.com/neonabyss2',
   },
-  // 👉 APPLY TEMPLATE: point these at the game's real canonical pages.
-  sameAs: [
-    'https://example.com/anvil-quest',
-    'https://en.wikipedia.org/wiki/Anvil_Quest',
-  ],
   game: {
-    name: 'Anvil Quest',
-    platform: 'Roblox',
-    developer: 'Forge Studios',
-    genre: 'Fantasy RPG',
-    releaseDate: '2026-01-15',
+    name: 'Neon Abyss 2',
+    platform: 'PC (Steam), PS5, Xbox, Nintendo Switch',
+    developer: 'Veewo Games',
+    genre: 'Action Roguelike',
+    releaseDate: '2026-10-08',
   },
-  // hero.webp is 1200×630 (the recommended OG share aspect ratio).
-  ogImageWidth: 1200,
-  ogImageHeight: 630,
+  // og:image dims of the custom hero.webp — if you replace public/images/hero.webp,
+  // update these in src/config/site.ts to match (wrong dims mis-crop share cards).
+  ogImageWidth: 1254,
+  ogImageHeight: 1254,
 };
 
 /** Absolute site URL (no trailing slash). Falls back to the Astro `site` config. */

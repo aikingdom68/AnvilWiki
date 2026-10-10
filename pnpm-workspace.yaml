@@ -9,3 +9,17 @@ allowBuilds:
 # (astro-icon's SVG pipeline) still requires <0.7.5 upstream.
 overrides:
   fflate: ^0.7.5
+
+# Local setup: H: is exFAT, so dependencies must not use directory links.
+nodeLinker: hoisted
+packageImportMethod: copy
+enableGlobalVirtualStore: false
+
+# An in-repository store also avoids pnpm's project-registry directory link.
+storeDir: .local-cache/pnpm-store
+# Keep metadata and pnpm state inside the parent project folder.
+cacheDir: ../.local-cache/pnpm-cache
+stateDir: ../.local-cache/pnpm-state
+
+# Use the installed pnpm 11 without attempting a symlink-based version install.
+pmOnFail: warn

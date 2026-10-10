@@ -622,7 +622,10 @@ function removeLandingPage(): number {
       // Count entries before deletion: reading the directory after rmSync()
       // throws ENOENT in non-dry-run mode.
       removed += fs.readdirSync(abs).length;
-      if (!DRY_RUN) fs.rmSync(abs, { recursive: true, force: true });
+      // Windows can briefly report ENOTEMPTY/EBUSY while watchers release files.
+      if (!DRY_RUN) {
+        fs.rmSync(abs, { recursive: true, force: true, maxRetries: 10, retryDelay: 200 });
+      }
     } else {
       if (!DRY_RUN) fs.unlinkSync(abs);
       removed++;

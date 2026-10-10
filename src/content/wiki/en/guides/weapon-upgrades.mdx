@@ -1,0 +1,125 @@
+---
+title: 'Neon Abyss 2 Weapon Upgrades: Soul Shards, Affixes, and Extraction'
+description: "Learn how Soul Shards level weapons in Neon Abyss 2, compare upgrade choices, and avoid extraction mistakes with Philosopher's Stone."
+category: 'guides'
+date: 2026-10-10
+lastModified: 2026-10-10
+image: '../../../../assets/covers/en-guides-weapon-upgrades.png'
+tags: []
+draft: true
+noindex: true
+gameVersion: '1.0 (PC)'
+summary: 'Upgrade weapons by collecting Soul Shards from bosses and extracting unwanted weapons. The base level cap is eight, and each upgrade opens a reward choice. Compare affixes with the resources you actually carry. Read your Relic before extracting: Philosopher’s Stone replaces the shard reward with an Artifact and a damage cost.'
+faq:
+  - question: 'How do weapons gain levels?'
+    answer: 'They absorb Soul Shards. Boss rewards and extracting unwanted weapons provide shards; reaching the next requirement levels the weapon and opens an upgrade reward room.'
+  - question: 'What is the base weapon level cap?'
+    answer: 'The base cap is level 8. The unmodified requirements from level 1 to level 8 total 1,430 Soul Shards.'
+  - question: 'Should I extract every weapon I find?'
+    answer: 'Compare the spare with your current weapon first. Extract it when you have decided you do not need its attacks or effects, and check whether your Relic changes the extraction result.'
+  - question: 'Why did extraction stop giving Soul Shards?'
+    answer: 'Check Philosopher’s Stone. Its effect replaces weapon extraction shards with a random Artifact and causes damage.'
+  - question: 'Does a higher weapon level always mean a fixed damage increase?'
+    answer: 'No. Read the weapon’s affixes and upgrade choices. A per-level affix scales with level, while a resource affix depends on the relevant resource you carry.'
+  - question: 'Can I reduce the shard requirement?'
+    answer: 'Player Zero Ready reduces the number of Soul Shards required for upgrades by 20%. Read your active modifiers before using the base requirements as a target.'
+---
+
+import Callout from '~/components/mdx/Callout.astro';
+import Accordion from '~/components/mdx/Accordion.astro';
+import StatBar from '~/components/article/StatBar.astro';
+
+## How do you upgrade a weapon with Soul Shards?
+
+Collect Soul Shards until your equipped weapon reaches its next level requirement, then compare the offered upgrade rewards. Bosses and extracting unwanted weapons provide shards. Before spending a spare, decide whether its range or effect would solve a problem your current weapon has; extraction removes that option from the room.
+
+The unmodified progression uses these requirements:
+
+| Current level | Shards needed for the next level | Shards from extracting a weapon at this level |
+| --- | --- | --- |
+| 1 | 60 | 20 |
+| 2 | 100 | 35 |
+| 3 | 150 | 54 |
+| 4 | 200 | 70 |
+| 5 | 250 | 100 |
+| 6 | 320 | 110 |
+| 7 | 350 | 130 |
+| 8 | Base cap reached | 150 |
+
+These [base weapon values](https://capydb.com/neon-abyss-2/guides/weapon-levels/) total **1,430 shards** to move from level 1 to level 8. Extra experience carries over rather than disappearing at each level boundary. Active modifiers can change how quickly you reach a requirement.
+
+Start with the [beginner guide](/guides/beginner-guide/) if you are still learning the difference between replacing a weapon and extracting it.
+
+## Where should you look for upgrade experience?
+
+Prioritise boss rewards and spare weapons rather than expecting ordinary enemy kills to provide weapon experience. Keep track of weapons left on the current floor, then revisit the ones you can safely extract. Your next upgrade may be close enough that one spare matters, but a useful replacement deserves comparison before you dismantle it.
+
+| Source | Base Soul Shards | Decision during exploration |
+| --- | --- | --- |
+| Floor 1 boss | 42 | Check whether a spare can finish the first upgrade |
+| Floor 2 boss | 50 | Compare the reward with your current experience bar |
+| Floor 3 boss | 60 | Plan the next requirement rather than assuming another level is automatic |
+| Floor 4 boss | 69 | Revisit unwanted weapons before moving on |
+| Ordinary enemy kills | No direct shard reward | Clear threats for progress and safety |
+
+For example, a base floor 1 boss reward and one extracted level 1 weapon give **42 + 20 = 62** shards. That covers the first 60-shard requirement with 2 left over. This example assumes unmodified solo rewards; item effects and multiplayer distribution can change your income.
+
+<Callout type="tip" title="Compare first, extract second">
+Test a spare weapon's attack if the room is safe. Once you extract it, its range and mechanics are no longer available as a replacement.
+</Callout>
+
+## What should you choose in an upgrade reward room?
+
+Choose the offered improvement that fixes your current limitation: reliable damage, a useful item interaction, or an affix better matched to your resources. Read the actual options instead of treating every reward room as identical. A weapon you can aim comfortably benefits more from a supported effect than from an impressive bonus you cannot maintain.
+
+The [Weapon Reforge update](https://steamcommunity.com/games/2235200/announcements/detail/527621618556469420) introduced flexible upgrade and tempering choices. At an upgrade, compare:
+
+| Option you are considering | Question to ask |
+| --- | --- |
+| Offered item | Does this support an effect already working in the run? |
+| Weapon-specific improvement | Will it improve the attack you actually use? |
+| Forge or affix change | What benefit would disappear with the old affix? |
+| Extraction option shown in the reward room | Is the displayed result more useful than keeping that reward? |
+
+<Accordion title="When is a simple improvement the better choice?">
+<p>If your current attacks miss while you dodge, first consider reach, attack behaviour, or an upgrade that makes those attacks easier to use. A conditional damage bonus is less helpful when you cannot keep the condition active.</p>
+<p>With a companion weapon, inspect what the offered effect counts. Eggs, Hatchmon, and Super Hatchmon are different labels; match the affix to the resource named on it.</p>
+</Accordion>
+
+## How do you judge a resource-based affix?
+
+Read which resource the affix counts, its rarity, and any cap before changing your inventory around it. A bonus based on held keys or companions depends on your present setup, not simply on having collected that resource earlier. Check the effect again after a purchase, fusion, or equipment change that alters the relevant condition.
+
+| Affix type | What you should inspect | Example of a useful check |
+| --- | --- | --- |
+| Per level | Weapon level and the listed rate | Does the weapon currently have that scaling affix? |
+| Flat bonus | Attribute improved and stated amount | Does it solve a damage, range, or handling problem? |
+| Per resource | Resource name, held amount, rarity, cap | Would spending the resource reduce this contribution? |
+| On hit | Trigger and cooldown | Does your attack pattern activate it consistently? |
+
+The Key version of [Iron Glaive](https://capydb.com/neon-abyss-2/weapons/#iron-glaive), for example, has a Normal key affix giving **1% weapon damage per held key, capped at 30%**. Twenty held keys contribute 20% through that affix. This describes one affix contribution, not the weapon's final damage formula.
+
+The [Noxmare build guide](/hatchmon/noxmare-poison-build/) works through the same decision with a Hatchmon-based weapon.
+
+## Why can a Relic change the extraction result?
+
+Check your Relic whenever extracting a spare gives an unexpected result. Philosopher's Stone changes the action from obtaining Soul Shards to taking damage and receiving a random Artifact. Decide which result you need before using it, particularly when your weapon is near an upgrade or your remaining health is already low.
+
+| Relic | Effect relevant to upgrades | What to consider |
+| --- | --- | --- |
+| [Philosopher's Stone](https://capydb.com/neon-abyss-2/items/#philosophers-stone) | Weapon extraction gives an Artifact instead of shards and causes damage | Whether the random item is worth the health and lost experience |
+| [Player Zero Ready](https://capydb.com/neon-abyss-2/items/#player-zero-ready) | Reduces upgrade shard requirements by 20% | Your actual target can be lower than the base table |
+
+<StatBar label="Player Zero Ready: upgrade shard requirement reduction" value={20} note="20% less required per upgrade" />
+
+<Callout type="warn" title="Check the Relic pocket too">
+Philosopher's Stone remains active while carried in your Relic pocket. Merely changing what you hold in your hand does not restore the normal extraction reward.
+</Callout>
+
+## How should your Agent affect upgrade decisions?
+
+Account for your Agent's equipment rules before spending a weapon you might still use. James can carry two weapons and gains additional extraction shards, while Saya's katana follows her primary weapon's level. Other Agents may instead encourage companion support or resource management, so choose upgrades around the kit you are taking into the next fight.
+
+Use the [Agent comparison](/agents/agent-guide/) to check those rules. If Soul Shards are central to your run, the Artisanism section of the [Faith guide](/guides/faith-and-temples/) explains the matching Faith direction.
+
+Before entering the boss room, settle the replacement decision, read the new affix, and make sure your attacks still work while moving. An upgrade is useful when you can apply it during the fight.

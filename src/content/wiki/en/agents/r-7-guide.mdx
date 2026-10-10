@@ -1,0 +1,133 @@
+---
+title: 'Neon Abyss 2 R-7 Guide: Unlock, Shields, and Damage Scaling'
+description: 'Learn how to unlock R-7 in Neon Abyss 2, manage shield-only health, find useful shield tools, and understand Abnormal Chip damage scaling.'
+category: 'agents'
+date: 2026-10-10
+lastModified: 2026-10-10
+image: '../../../../assets/covers/en-agents-r-7-guide.png'
+tags: []
+draft: true
+noindex: true
+gameVersion: '1.0 (PC)'
+summary: 'Unlock R-7 by holding seven shields at once during one run and claiming Iron Bastion. He uses shields as health and gains permanent weapon damage from shield pickups. Separate your current protection from the pickup counter: losing shields reduces survival, while the acquired damage bonus remains. Seek shield support and preserve resources for the next boss.'
+faq:
+  - question: 'How do I unlock R-7?'
+    answer: 'Hold 7 shields simultaneously during one run, then claim Iron Bastion in the Bar. Collecting 7 over time while spending them does not meet the simultaneous condition.'
+  - question: 'What health does R-7 start with?'
+    answer: 'His base loadout has no hearts and 4 shields. He also starts with Andromeda and 1 bomb.'
+  - question: 'How much damage does a shield pickup add?'
+    answer: 'Abnormal Chip adds 0.5% weapon damage per shield pickup, up to 100% from this effect. It is a pickup-based bonus rather than a bonus based only on the shields currently held.'
+  - question: 'Does losing a shield remove its acquired damage bonus?'
+    answer: 'The pickup bonus is permanent for the run. Losing shields still reduces the protection you have available for incoming damage.'
+  - question: 'Can R-7 use ordinary heart pickups?'
+    answer: 'At Death’s Door, his ability allows heart pickups to convert into shields. Do not assume every heart is ordinary healing at all other health states.'
+  - question: 'Is Energy Cube always a shield reward?'
+    answer: 'No. Its Portal Stone interaction can supply a shield or a Moldy Heart. Read the resulting pickup before treating it as safe recovery.'
+---
+
+import Callout from '~/components/mdx/Callout.astro';
+import Accordion from '~/components/mdx/Accordion.astro';
+import StatBar from '~/components/article/StatBar.astro';
+
+## How do you meet Iron Bastion's seven-shield requirement?
+
+Hold seven shields simultaneously during a single run, then claim Iron Bastion on the Task screen in the Bar. Focus on keeping the shields you acquire until the condition is met. Seven pickups spread across several attempts, or seven collected while repeatedly losing them, do not mean you held the required amount at once.
+
+The [R-7 unlock condition](https://capydb.com/neon-abyss-2/agents/r-7/) is a single-run inventory check. Use these distinctions when planning it:
+
+| Counter or state | What matters |
+| --- | --- |
+| Current shields | The number you hold at the same time |
+| Shields collected earlier | Helps only if enough protection remains when the condition is met |
+| Progress across different runs | Does not combine into the simultaneous requirement |
+| Completed Iron Bastion | Claim the reward to finish unlocking the Agent |
+
+Choose safe recovery opportunities and avoid optional damage trades while building toward the target. The [beginner guide](/guides/beginner-guide/) covers resource choices that help you preserve protection.
+
+## How does R-7's starting kit change survival planning?
+
+Plan around shields instead of a normal heart-healing routine. R-7 starts with shield-only health, Andromeda, and a bomb, while Abnormal Chip adds missile support and pickup-based damage scaling. Read recovery effects by what they actually provide; an item that improves a heart container may serve a different purpose from one that supplies shields.
+
+| Base starting feature | Value or equipment | What to learn first |
+| --- | --- | --- |
+| Hearts | 0 | Ordinary heart healing is not the default plan |
+| Shields | 4 | Watch the remaining protection during exploration |
+| Bombs | 1 | Keep it for an interaction worth the cost |
+| Weapon | Andromeda | Learn its ordinary attacks and periodic powerful laser |
+| Ability | Abnormal Chip | Shield health, tech missiles, and pickup scaling |
+
+At **Death's Door**, R-7 can pick up hearts and convert them into shields. This is a specific condition in his ability, so check the current state before relying on a heart lying in the room.
+
+<Callout type="warn" title="Keep shield recovery in your budget">
+Taking damage to trigger a resource effect still spends R-7's protection. Avoid optional hits when you do not have a workable way to replace the shields.
+</Callout>
+
+## How do shield pickups increase weapon damage?
+
+Each shield pickup adds half a percent of weapon damage through Abnormal Chip, with a maximum contribution of one hundred percent. That acquired bonus stays for the run, while the shields themselves remain spendable protection. Track these separately: a high pickup count can improve attacks without leaving enough health to survive the next encounter.
+
+<StatBar label="Abnormal Chip: weapon damage per shield pickup" value={0.5} note="+0.5% per pickup; effect capped at +100%" />
+
+These examples apply only to the [Abnormal Chip contribution](https://capydb.com/neon-abyss-2/items/#abnormal-chip):
+
+| Shield pickups counted by the effect | Acquired weapon damage bonus |
+| --- | --- |
+| 10 | +5% |
+| 20 | +10% |
+| 50 | +25% |
+| 100 | +50% |
+| 200 | +100%, the stated cap |
+
+The table is arithmetic from the per-pickup rate, not a promise that every run can collect those quantities. It also does not describe your final damage after all other weapon and item effects.
+
+<Accordion title="Does keeping more shields mean the same thing as collecting more?">
+<p>No. Iron Bastion asks for a simultaneous shield amount. Abnormal Chip's damage effect counts shield pickups. Your current shield bar is the immediate survival budget.</p>
+<p>A run can therefore have a useful acquired damage bonus and very little remaining protection. Treat the low shield bar as the problem to solve before spending on another optional damage effect.</p>
+</Accordion>
+
+## Which pickups can support shield recovery?
+
+Look for effects that explicitly provide shields, and inspect the result when a reward can be a different kind of pickup. Read the available item rather than assuming every health-labelled reward behaves alike. A shield gain helps survival and can support the pickup effect, but resource costs and access to the item still matter.
+
+| Item if encountered | Shield-related effect | Decision to make |
+| --- | --- | --- |
+| [Miracle Bean](https://capydb.com/neon-abyss-2/items/#miracle-bean) | Grants 4 shields and restores hearts | Judge the shield benefit for your current protection |
+| [Blue Milk](https://capydb.com/neon-abyss-2/items/#blue-milk) | Adds 2 shields and a heart container | Read the shield gain before comparing it with a damage purchase |
+| [Chinese Baozi](https://capydb.com/neon-abyss-2/items/#chinese-baozi) | Adds 1 shield and a heart container, with a Luck increase | Compare the protection with what the shop asks you to pay |
+| [Energy Cube](https://capydb.com/neon-abyss-2/items/#energy-cube) | Portal Stone activation drops a shield or Moldy Heart and improves shield drops | Check which pickup appeared |
+| [Naive Fishbowl](https://capydb.com/neon-abyss-2/items/#naive-fishbowl) | Its R-7-specific behaviour drops a shield on entering a new floor | Read the Agent-specific effect rather than only the heart-container text |
+
+These are tools to recognise when available, rather than a guaranteed shopping list. Compare a shield reward with the protection you need now and the price you can afford. Preserve useful recovery instead of deliberately taking damage just to make room for another pickup.
+
+The [Faith guide](/guides/faith-and-temples/) helps you choose a resource direction without spending all your survival budget to fill a meter.
+
+## Why should you reassess protection before Floor 5?
+
+Prepare more carefully before the fifth floor because ordinary damage becomes more expensive at that depth. Under the base rules, hits on floors one through four consume half a heart or shield, while later hits consume a full one. R-7's acquired damage bonus does not replace the extra protection needed to absorb those attacks.
+
+| Dungeon depth | Base loss from an ordinary hit | Preparation priority |
+| --- | --- | --- |
+| Floors 1–4 | Half a heart or shield | Learn movement while preserving resources |
+| Floor 5 onward | One heart or shield | Revisit reachable protection before committing |
+
+The [health rules](https://capydb.com/neon-abyss-2/guides/health/) describe these base values. Effects that alter damage taken can change the actual cost, so read your active modifiers as well.
+
+<Callout type="tip" title="Check the shield bar before chasing damage">
+An extra pickup bonus is useful only if the run continues. When protection is low, favour reachable recovery and a comfortable firing position over a risky optional interaction.
+</Callout>
+
+## What should you check before taking R-7 into a boss fight?
+
+Check remaining shields, reachable recovery, weapon handling, and the resources needed by your Curio before entering. Keep the acquired damage bonus in mind, but judge survival from the protection still present. Test any new weapon while there is safe space to move, and avoid assuming automatic missiles will handle positioning for you.
+
+<Accordion title="What is a useful final preparation sequence?">
+<ol>
+  <li>Inspect the shield bar and collect reachable, useful recovery.</li>
+  <li>Check whether a Relic changes extraction or damage costs.</li>
+  <li>Read the current weapon affixes and test its attack range.</li>
+  <li>Keep enough resources for your chosen Curio.</li>
+  <li>Enter with a route to dodge rather than a plan to trade hits.</li>
+</ol>
+</Accordion>
+
+Use the [weapon upgrade guide](/guides/weapon-upgrades/) to settle equipment decisions and the [boss guide](/bosses/boss-guide/) for encounter preparation. The [Agent overview](/agents/agent-guide/) covers alternatives if shield-only survival is not the style you want for the next attempt.

@@ -338,6 +338,12 @@ export default defineConfig({
     icon(),
   ],
   vite: {
+    server: {
+      watch: {
+        // The local pnpm store has thousands of files; watching it delays dev startup.
+        ignored: ['**/.local-cache/**'],
+      },
+    },
     resolve: {
       alias: {
         '~': '/src',

@@ -1,11 +1,11 @@
 {
-  "name": "Anvil Quest Wiki",
-  "short_name": "AQ Wiki",
-  "description": "Complete Anvil Quest wiki with boss guides, codes, and tier lists.",
+  "name": "Neon Abyss 2 Wiki",
+  "short_name": "NA2 Wiki",
+  "description": "Explore the Neon Abyss 2 Wiki for beginner guides, agent abilities, Hatchmon evolutions, boss strategies, and gameplay tips.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",
-  "theme_color": "#f36716",
+  "theme_color": "#9234ea",
   "icons": [
     {
       "src": "/android-chrome-192x192.png",
