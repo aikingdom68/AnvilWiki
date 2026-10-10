@@ -63,4 +63,29 @@ Snake Hairpin 与 Lightbulb 搭配注明有资源条件和触发冷却，没有�
 - `page-checks.json` 与逐页 HTML：10 页 HTTP 200，唯一 H1，正文无过程叙述或占位字段；草稿正文通过真实开发请求编译，不能只用排除草稿的生产 build 作为正文验证。
 - `browser-review.json`：真实 Chrome 中 375 像素 iframe（内容视口 360），6 篇新增页面文档无横向溢出；每张表格横向可滚动，正常图片全部加载。
 
-所有 10 篇保留 `draft: true` 与 `noindex: true`。构建中的 14 个页面是站点结构页面，草稿不进入生产输出、RSS 或 sitemap。尚未记录人工实机核实、用户逐篇确认、转正或生产部署。
+以上为最初成稿时的状态：当时所有 10 篇保留 `draft: true` 与 `noindex: true`，生产构建中的 14 个页面只有站点结构页面，草稿不进入生产输出、RSS 或 sitemap。
+
+## 2026-10-10：修复正式站文章缺失
+
+用户明确要求检查并修复正式站所有文章未显示的问题。线上部署标记与 GitHub `main` 均为 `297b0069ea0e0db078e6c32faad417f3f6ee8fc3`，四个栏目返回空列表，新手文章返回 404；因此此次缺失来自十篇成稿的草稿标记，而非部署落后。
+
+按本次发布要求逐篇复查现有正文、参考来源、占位内容和内链后，十篇均改为 `draft: false`、`noindex: false`。没有绕过站点对其他草稿的排除规则，没有新增游戏事实，也没有把资料比对声称为实机测试。首版仍限定为十篇；后续候选未创建或发布。
+
+| 栏目 | 复查并解除草稿标记的成稿 |
+| --- | --- |
+| Guides（3） | beginner-guide、weapon-upgrades、faith-and-temples |
+| Agents（3） | agent-guide、elise-guide、r-7-guide |
+| Hatchmon（2） | hatchmon-guide、noxmare-poison-build |
+| Bosses（2） | boss-guide、dark-aphrodite-route |
+
+发布验证需要同时覆盖十篇实际文章 HTML、四个栏目中的 3/3/2/2 条目、搜索索引、RSS 和 sitemap，不能仅以 `pnpm build` 的退出码判断文章已发布。部署后应检查正式域名的文章 HTTP 状态和部署提交标记。
+
+本次本地发布验证结果：
+
+- `pnpm check-content`：十篇通过，无内容警告。
+- `pnpm check-config`：栏目、语言、首页模块和正式域名均一致。
+- `pnpm build`：24 个 HTML 页面，包含全部十篇攻略；Pagefind 索引十篇文章。
+- `pnpm check-links`：24 个页面中的 725 条内部链接全部可解析。
+- 逐篇确认实际 HTML 存在、唯一 H1、无 `noindex`、canonical 使用正式域名；十篇均出现在相应栏目、RSS 和 sitemap。
+
+这份记录随发布修复提交，线上验收须在 Cloudflare 完成该提交的部署后另行请求正式域名进行。

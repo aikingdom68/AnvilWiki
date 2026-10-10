@@ -4,26 +4,26 @@
 
 ## 首版范围：10 篇
 
-现有 4 篇总览加本次 6 篇专项，共 10 篇，作为首版候选。选题到此冻结，不继续为了达到 15 篇增加相似页面。当前全部已经成稿并可在开发站预览，均保留 `draft: true`、`noindex: true`。
+现有 4 篇总览加本次 6 篇专项，共 10 篇，作为首版。选题到此冻结，不继续为了达到 15 篇增加相似页面。2026-10-10 用户要求修复正式站文章全部缺失的问题；逐篇复查成稿和已有资料依据后，十篇均改为 `draft: false`、`noindex: false`，供生产构建发布。当前这十篇的资料核对不等同于亲自实机测试。
 
 这份选题依据玩家问题、现有素材、可核对的游戏资料和当前栏目选择，不是经过搜索量工具或 Search Console 验证的流量预测。10–15 是本次编辑预算；Google 的[实用内容指南](https://developers.google.com/search/docs/fundamentals/creating-helpful-content)强调内容对读者的价值、可靠性和原创贡献，没有把本站的 10 篇预算规定为排名门槛。
 
 | 顺序 | 页面 | 独立回答的问题 | 状态 |
 | --- | --- | --- | --- |
-| 1 | [新手指南](http://localhost:4321/guides/beginner-guide/) | 第一次开局如何操作、探索和分配资源？ | 现有成稿；草稿 |
-| 2 | [武器升级](http://localhost:4321/guides/weapon-upgrades/) | Soul Shards 如何升级，何时提取，词缀和 Relic 如何影响选择？ | 本次新增；草稿 |
-| 3 | [角色总览](http://localhost:4321/agents/agent-guide/) | 各角色能力是什么，怎样完成解锁任务？ | 现有成稿；草稿 |
-| 4 | [Hatchmon 总览](http://localhost:4321/hatchmon/hatchmon-guide/) | 如何辅助孵化、唤醒和选择基础融合？ | 现有成稿；草稿 |
-| 5 | [信仰与神殿](http://localhost:4321/guides/faith-and-temples/) | 信仰如何解锁、选择、积累和进入神殿？ | 本次新增；草稿 |
-| 6 | [Elise 专项](http://localhost:4321/agents/elise-guide/) | 8 次孵化任务怎样完成，Kiddy 如何恢复伙伴？ | 本次新增；草稿 |
-| 7 | [R-7 专项](http://localhost:4321/agents/r-7-guide/) | 7 护盾解锁与拾取增伤有何区别，护盾生命如何管理？ | 本次新增；草稿 |
-| 8 | [Boss 总览](http://localhost:4321/bosses/boss-guide/) | 前期战斗如何准备，后期路线如何选择？ | 现有成稿；草稿 |
-| 9 | [Noxmare 宠物毒流](http://localhost:4321/hatchmon/noxmare-poison-build/) | 毒标记、宠物伤害词缀和恢复工具怎样组成可用配装？ | 本次新增；草稿 |
-| 10 | [Dark Aphrodite 路线](http://localhost:4321/bosses/dark-aphrodite-route/) | 普通 Aphrodite 前置与 Hermes 的 10 Hatchmon 条件如何分别准备？ | 本次新增；草稿 |
+| 1 | [新手指南](https://neonabyss2wiki.online/guides/beginner-guide/) | 第一次开局如何操作、探索和分配资源？ | 首版发布 |
+| 2 | [武器升级](https://neonabyss2wiki.online/guides/weapon-upgrades/) | Soul Shards 如何升级，何时提取，词缀和 Relic 如何影响选择？ | 首版发布 |
+| 3 | [角色总览](https://neonabyss2wiki.online/agents/agent-guide/) | 各角色能力是什么，怎样完成解锁任务？ | 首版发布 |
+| 4 | [Hatchmon 总览](https://neonabyss2wiki.online/hatchmon/hatchmon-guide/) | 如何辅助孵化、唤醒和选择基础融合？ | 首版发布 |
+| 5 | [信仰与神殿](https://neonabyss2wiki.online/guides/faith-and-temples/) | 信仰如何解锁、选择、积累和进入神殿？ | 首版发布 |
+| 6 | [Elise 专项](https://neonabyss2wiki.online/agents/elise-guide/) | 8 次孵化任务怎样完成，Kiddy 如何恢复伙伴？ | 首版发布 |
+| 7 | [R-7 专项](https://neonabyss2wiki.online/agents/r-7-guide/) | 7 护盾解锁与拾取增伤有何区别，护盾生命如何管理？ | 首版发布 |
+| 8 | [Boss 总览](https://neonabyss2wiki.online/bosses/boss-guide/) | 前期战斗如何准备，后期路线如何选择？ | 首版发布 |
+| 9 | [Noxmare 宠物毒流](https://neonabyss2wiki.online/hatchmon/noxmare-poison-build/) | 毒标记、宠物伤害词缀和恢复工具怎样组成可用配装？ | 首版发布 |
+| 10 | [Dark Aphrodite 路线](https://neonabyss2wiki.online/bosses/dark-aphrodite-route/) | 普通 Aphrodite 前置与 Hermes 的 10 Hatchmon 条件如何分别准备？ | 首版发布 |
 
 先保留现有 Guides、Agents、Hatchmon、Bosses 四个栏目。Codes 页需要可验证的官方可用码与兑换步骤，Tier List 需要可复现的排序依据；当前材料没有满足这两类页面的条件，因此没有创建占位页或任意排行。
 
-## 首版逐篇检查时间
+## 首版发布后复查时间
 
 | 时间 | 检查范围 | 核对重点 |
 | --- | --- | --- |
@@ -31,9 +31,9 @@
 | 2026-10-13，周二 19:00–20:00 | 上表 5–7 | Faith 选项、神殿、Kiddy 恢复和 R-7 拾取效果 |
 | 2026-10-14，周三 19:00–20:00 | 上表 8–10 | 战前准备、Noxmare 词缀与 Hermes 路线门槛 |
 
-这是建议的编辑检查窗口，不是自动发布任务。资料比对和技术检查已经完成；不要把这些检查记录写成亲自实机测试。视频衍生内容按仓库技能的事实规则，仍需人工进游戏核实后才能转正。
+这是建议的发布后复查窗口，不是自动发布任务。用户本次要求首版成稿显示在正式站，当前十篇已在资料比对基础上修改发布标记；这些检查记录不得写成亲自实机测试。后续实机复查与玩家反馈用于更正和补充攻略。
 
-每篇单独检查、单独记录结果；确认后再逐篇处理 `draft` 和 `noindex`。缺少确认的文章继续保持草稿。首版确认完成后进入部署，不继续扩充首版目标或为凑数创建页面。
+后续新增文章继续逐篇检查、逐篇处理 `draft` 和 `noindex`；存在未解决的事实冲突或占位内容时保留草稿。当前首版部署完成后，不继续扩充首版目标或为凑数创建页面。
 
 ## 下一批：10 个候选选题
 
@@ -63,8 +63,7 @@
 - [x] 10 篇开发页面 HTTP 200，文章间 48 条 Markdown 内链可解析。
 - [x] 6 篇新增页的窄屏表格可横向滚动，文档没有横向溢出，已渲染图片正常加载。
 - [x] 公开正文没有字幕提取叙述、待补充字段或任意编造的数字。
-- [x] 所有实际文章仍有草稿标记，逐篇检查时间和后续候选已记录。
-- [ ] 人工实机核实与逐篇转正；尚未记录完成。
-- [ ] 生产部署；尚未执行。
+- [x] 按用户要求复查当前十篇成稿并逐篇修改发布标记；后续复查时间和候选已记录。
+- [ ] 人工实机复查；资料比对不等于实机测试。
 
-本次核验依据与日志见 [首版增补编辑记录](../article-reviews/neon-abyss-2-first-release.md)。草稿不会进入生产构建，因此当前构建成功不代表 10 篇已经发布。
+本次核验依据与历史日志见 [首版增补编辑记录](../article-reviews/neon-abyss-2-first-release.md)。这十篇现已解除草稿排除；生产构建需实际生成全部文章，并核对四个栏目、RSS 和 sitemap 中的条目。部署后再请求正式域名确认可访问性。
