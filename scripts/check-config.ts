@@ -20,7 +20,7 @@
  *      must be one of the 6 supported values.
  *   4. Overview labels: en.json overview.<key> exists for every nav key.
  *   5. Deployment domain gate (the wrangler.toml trap, caught in real use):
- *        effective SITE_URL host (env override > wrangler.toml [vars])
+ *        effective SITE_URL host (env override > wrangler.toml [vars] > site.ts domain)
  *      must equal src/config/site.ts `domain`. When wrangler.toml exists it
  *      is the SOLE source of Pages env — a leftover demo SITE_URL silently
  *      points every canonical/sitemap at the wrong site.
@@ -172,6 +172,9 @@ let urlSource = 'env SITE_URL';
 if (!effectiveUrl && fs.existsSync(path.resolve(ROOT, 'wrangler.toml'))) {
   effectiveUrl = read('wrangler.toml').match(/^SITE_URL\s*=\s*"([^"]+)"/m)?.[1] ?? '';
   urlSource = 'wrangler.toml [vars]';
+} else if (!effectiveUrl && domain) {
+  effectiveUrl = `https://${domain}`;
+  urlSource = 'site.ts fallback';
 }
 if (!domain) {
   err('could not parse `domain` in src/config/site.ts');

@@ -87,7 +87,7 @@ export const site: SiteConfig = {
   ogImageHeight: 1254,
 };
 
-/** Absolute site URL (no trailing slash). Falls back to the Astro `site` config. */
+/** Absolute site URL (no trailing slash). SITE_URL overrides the configured domain. */
 export const siteUrl: string = (process.env.SITE_URL || `https://${site.domain}`).replace(
   /\/$/,
   '',
